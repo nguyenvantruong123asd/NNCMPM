@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login sign</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/icon/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- modal layout -->
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="form">
+            <div class="tab-header">
+                <div id="button"></div>
+                <button class="btn2 dn" type="button" onclick="login()">Đăng nhập</button>
+                <button class="btn2 dk" type="button" onclick="reg()">Đăng ký</button>
+            </div>
+            <!-- ----------------authen form------------------->
+            <div class="tab-content">
+                <div class="auth-form" id="login">
+                    <div class="authen-form_header-down">
+                        <div class="auth-form_heading-down">Đăng nhập bằng Tên/Email</div>
+                        <div class="auth-form_switch-down">Đăng nhập với</div>
+                    </div>
+                    <div class="auth-form_form ">
+                        <div class="auth-form_form-login">
+                            <div class="auth-form_group-left">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input type="text" class="auth-form_input" placeholder="nhập tên" id="username" onchange="validation()">
+                                <span id="error_name"><br>Tên là bắt buộc</span>
+                            </div>
+                            <div class="auth-form_group-left">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                <input type="password" class="auth-form_input" placeholder="nhập mật khẩu" id="password" onchange="validation()">
+                                <span id="error_password"><br>Mật khẩu ít nhất 6 ký tự là bắt buộc</span>
+                            </div>
+                            <div class="auth-form_group-left">
+                                <a mat-button>
+                                    <button class="auth-form_button" onclick="checkLogin()">Đăng nhập</button>
+                                </a>
+                            </div>
+                            <a href="" class="auth-form_text">Quên tài khoản hoặc mật khẩu ?</a>
+                        </div>
+                        <div class="auth-form_form-control">
+                            <div class="auth-form_group-right1">
+                                <a href="" class="button_fb">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <span class="button_fb-name">Facebook</span>
+                                </a>
+                            </div>
+                            <div class="auth-form_group-right2">
+                                <a href="" class="button_gg">
+                                    <i class="fa fa-google" aria-hidden="true"></i>
+                                    <span class="button_gg-name">Google</span>
+                                </a>
+                            </div>
+                            <div class="auth-form_group-right3">
+                                <a href="" class="button_ap">
+                                    <i class="fa fa-apple" aria-hidden="true"></i>
+                                    <span class="button_ap-name">Apple</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-------------------------End authen form--------------------------- -->
+                <!-- ----------------authen Sign up ------------------->
+                <div class="auth-form" id="reg">
+                    <div class="authen-form_header-down">
+                        <div class="auth-form_heading-down">Tạo tài khoản BlogNew Để sử dụng đầy đủ tính năng đọc báo và
+                            tham gia cộng đồng</div>
+                        <div class="auth-form_switch-down">Tạo tài khoản với</div>
+                    </div>
+                    <div class="auth-form_form">
+                        <div class="auth-form_form-login">
+                            <div class="auth-form_group-left">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input type="text" class="auth-form_input" placeholder="nhập tên" id="username" onchange="validation()">
+                                <span id="error_name1"><br>Tên là bắt buộc</span>
+                            </div>
+                            <div class="auth-form_group-left">
+                                <i class="fa fa-envelope" aria-hidden="true" style="padding-left:15px"></i>
+                                <input type="text" class="auth-form_input" placeholder="Nhập email/sdt" id="email" onchange="validation()">
+                                <span id="error_email1"><br>Email / số điện thoại di động không hợp lệ</span>
+                            </div>
+                            <div class="auth-form_group-left">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                <a class="eye"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                <input type="password" class="auth-form_input" placeholder="nhập mật khẩu" id="password" onchange="validation()">
+                                <span id="error_password1"><br>Mật khẩu ít nhất 6 ký tự là bắt buộc</span>
+                            </div>
+                            <div class="auth-form_group-left">
+                                <button class="auth-form_button" onclick="checkReg()">Tạo tài khoản</button>
+                            </div>
+                        </div>
+                        <div class="auth-form_form-control">
+                            <div class="auth-form_group-right1">
+                                <a href="" class="button_fb">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <span class="button_fb-name">Facebook</span>
+                                </a>
+                            </div>
+                            <div class="auth-form_group-right2">
+                                <a href="" class="button_gg">
+                                    <i class="fa fa-google" aria-hidden="true"></i>
+                                    <span class="button_gg-name">Google</span>
+                                </a>
+                            </div>
+                            <div class="auth-form_group-right3">
+                                <a href="" class="button_ap">
+                                    <i class="fa fa-apple" aria-hidden="true"></i>
+                                    <span class="button_ap-name">Apple</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---------------------End authen form--------------------------- -->
+            </div>
+        </div>
+
+    </div>
+    <!-- End modal layout -->
+
+    <!-- javascrip -->
+    <script>
+        var a = document.getElementById("login");
+        var b = document.getElementById("reg");
+        var c = document.getElementById("button");
+
+        var error_name = document.getElementById("error_name");
+        var error_email = document.getElementById("error_email");
+        var error_password = document.getElementById("error_password");
+
+
+    
+        function reg(){
+            a.style.marginTop = "-380px";
+            c.style.left = "50%";
+        }
+        function login(){
+            a.style.marginTop = "0";
+            c.style.left = "0";
+        }
+        function checkLogin(){
+            error_name.style.display = "block";
+            error_password.style.display = "block";
+        }
+        function checkReg(){
+            error_name1.style.display = "block";
+            error_email1.style.display = "block";
+            error_password1.style.display = "block";
+        }
+
+        function validation(){
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if(isNaN(email)){
+                email.style.border = "1px solid red";
+                error_email.style.display = "block";
+                email.focus();
+                return false;   
+            }
+            if(isNaN(password)){
+                password.style.border = "1px solid red";
+                error_password.style.display = "block";
+                password.focus();
+                return false;
+            }
+            if(isNaN(username)){
+                username.style.border = "1px solid red";
+                error_name.style.display = "block";
+                username.focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

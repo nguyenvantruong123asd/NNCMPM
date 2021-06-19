@@ -1,0 +1,584 @@
+*{
+  --prinary-color: #EE4D2D;
+  --white-color: #fff;
+  --white1-color: #ccc;
+  --black-color: #000;
+  --text-color: #333;
+  --border-color: #9e9e9e;
+  --linear-gradient: #FFFFFF;
+  --linear-gradient1: #fc9c9c;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* conmon */
+.clear{
+  clear: both;
+}
+.text-white{
+  color: var(--white-color) !important;
+}
+.row{
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.row::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.col{
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.col-third{
+  width: 33.3333%;
+}
+.col-full{
+  width: 100%;
+}
+.col-half{
+  width: 50%;
+}
+.MepTren-8{
+  padding-top:8px !important;
+}
+.MepTren-16{
+  padding-top:16px !important;
+}
+.MepDuoi-48{
+  margin-bottom: 48px !important;
+}
+.pull-right{ 
+  float: right !important;
+}
+.text-content {
+  text-align: center;
+}
+.btn-light1{
+  color: rgb(255, 0, 0);
+}
+.btn-light2{
+  color: #000 !important;
+}
+button:focus {
+  box-shadow:none;
+}
+.btn2{
+  display: inline-block;
+  line-height: 1.5;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+/* làm từ ngoài vào trong làm từ trên xuống dưới */
+/* vi trí
+  kích thước
+  màu sắc
+  kiểu dáng(kiểu chữ,hình tròn,vuông .. ) */
+  
+/* main */
+/* end main */
+
+/* header */
+/* end header */
+
+/* slider */
+/* end slider */
+
+/* content */
+/* end content */
+
+/* footer */
+/* end footer */
+
+
+#main {
+
+}
+#header {
+width: 100%;
+background-color:#EE4D2D;
+padding: 10px;
+text-align: center;
+}
+#slider {
+
+}
+#content {
+
+}
+#footer {
+
+}
+
+/* -------------------modal outlay-------------------- */
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+.modal-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.form{
+  margin: auto;
+  flex: none;
+  position: relative;
+  width: 800px;
+  height: 450px;
+  background-image: linear-gradient(var(--linear-gradient),var(--linear-gradient1));
+  border-radius:10px;
+  overflow: hidden;
+}
+
+/* authen form */
+.auth-form{
+  position: relative;
+}
+.authen-form_header-down{
+  display: flex;
+  width: 100%;
+}
+.tab-header{
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  height:68px;
+}
+.tab-header .auth-form_heading{
+  width: 60%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 15px 0 ;
+}
+
+/* login */
+
+#button{
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(to right, #ccc, #ff8168);
+  width: 50%;
+  transition: .5s;
+  height:68px;
+  border-radius: 10px;
+}
+.tab-header .dn{
+  width: 50%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 15px 0 ;
+  
+}
+.tab-header .dk{
+  width: 50%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 15px 0 ;
+}
+.tab-header:hover .dn,
+.tab-header:hover .dk {
+  font-size: 24px;
+}
+#login{
+  margin-top: 0px;
+}
+#reg{
+  margin-top: 105px;
+}
+/* end login */
+
+.tab-header .auth-form_heading a{
+}
+.tab-header .auth-form_switch a{
+  color: var(--prinary-color);
+}
+.auth-form_heading:hover a,
+.auth-form_switch:hover a {
+  font-size: 24px;
+}
+
+.tab-header .auth-form_switch{
+  width: 40%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 15px 0 ;
+  border-bottom: 1px solid var(--border-color);
+}
+.auth-form_heading a,
+.auth-form_switch a{
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+.auth-form_heading-down{
+  width: 60%;
+  text-align: center;
+  padding: 36px 39px ;
+  font-size: 17px;
+  opacity: 0.7;
+}
+.auth-form_switch-down{
+  width: 40%;
+  text-align: center;
+  padding: 36px 0 ;
+  font-size: 17px;
+  opacity: 0.7;
+}
+/* auth-form_form */
+.auth-form .auth-form_form{
+  width: 100%;
+  display: flex;
+}
+.auth-form .auth-form_form-login{
+  text-align: center;
+  border-right: 1px solid var(--border-color);
+  width:60%
+}
+.auth-form .auth-form_group-left{
+  position: relative;
+  padding : 6px;
+}
+.auth-form_group-left .eye{
+}
+.auth-form_group-left .eye i{
+  padding-left: 15px;
+}
+.auth-form .auth-form_group-left:hover i{
+  font-size : 14px;
+}
+.auth-form_group-left:hover .auth-form_button{
+  font-size: 18px;
+  cursor: pointer;
+}
+.auth-form .auth-form_group-left i{
+  position: absolute;
+  padding: 7px 10px 14px 17px;
+}
+.auth-form .auth-form_group-left .eye{
+  margin-right: 125px;
+  float: right;
+  color: var(--black-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.auth-form .auth-form_group-left .eye i{
+  font-size:15px;
+  opacity: 0.6;
+}
+.auth-form .auth-form_group-left .eye:hover i{
+  font-size:15px;
+  opacity: 1;
+}
+.auth-form .auth-form_input{
+  width: 65%;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  outline: none;
+  padding : 6px 0px 8px 40px
+}
+.auth-form .auth-form_button{
+  width : 65%;
+  padding : 7px;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  background-image: linear-gradient(to right,var(--linear-gradient),var(--prinary-color));
+
+}
+.auth-form .auth-form_text{
+  font-size: 12px;
+  text-decoration: none;
+}
+#error_name{
+  text-align: center;
+  margin-top:-17px;
+  display: none;
+  color:#c62828
+}
+#error_email{
+  text-align: center;
+  margin-top:-17px;
+  display: none;
+  color:#c62828
+}
+#error_password{
+  text-align: center;
+  margin-top:-17px;
+  display: none;
+  color:#c62828
+}
+#error_name1{
+  text-align: center;
+  margin-top:-17px;
+  display: none;
+  color:#c62828
+}
+#error_email1{
+  text-align: center;
+  margin-top:-17px;
+  display: none;
+  color:#c62828
+}
+#error_password1{
+  text-align: center;
+  margin-top:-17px;
+  display: none;
+  color:#c62828
+}
+
+/* auth-form_form-control  */
+
+.auth-form .auth-form_form-control{
+  width:40%;
+  padding: 10px;
+}
+.auth-form .auth-form_group-right1,
+.auth-form_group-right2,
+.auth-form_group-right3{
+  width : 57%;
+  padding : 8px 0 8px 28px;
+  margin: 0 0 20px 70px;
+}
+.auth-form_group-right1{
+  background-color: var(--white-color);
+  border-radius: 30px;
+}
+.auth-form_group-right2{
+  background-color: var(--white-color);
+  border-radius: 30px;
+}
+.auth-form_group-right3{
+  background-color: var(--white-color);
+  border-radius: 30px;
+}
+.button_fb{}
+.button_gg{}
+.button_ap{}
+.button_fb,
+.button_gg,
+.button_ap{
+  text-decoration: none;
+}
+.button_fb i{
+  padding-right: 26px;
+  color: #002BFF;
+  font-size:16px
+}
+.button_gg i{
+  padding-right: 26px;
+  color: var(--black-color);
+  font-size:16px
+}
+.button_ap i{
+  padding-right: 26px;
+  color: var(--black-color);
+  font-size:16px
+}
+.button_fb-name{}
+.button_gg-name,
+.button_ap-name{
+  color: var(--black-color);
+}
+.button_fb:hover .button_fb-name,
+.button_fb:hover i {
+  font-size: 18px;
+}
+.button_gg:hover .button_gg-name,
+.button_gg:hover i {
+  font-size: 18px;
+}
+.button_ap:hover .button_ap-name,
+.button_ap:hover i{
+  font-size: 18px;
+}
+/* ---------------------------End modal layout---------------------  */
+
+/* 
+    pc: >=1024px
+    720px < tablet < 1024px
+    mobile < 720px 
+*/
+/* pc */
+/* tablet */
+@media (min-width: 730px) and (max-width: 1023px) {
+  .modal .form {
+    width: 600px;
+    height: 350px;
+    margin-top: 220px;
+  }
+  .modal .form .button_ap-name {
+    color: var(--black-color);
+  }
+  .modal .form .authen-form_header-down {
+    height: 70px;
+    padding: 18px 1px;
+    font-size: 13px;
+  }
+  .modal .form .auth-form_heading-down {
+    padding: 5px 20px;
+    font-size: 13px;
+  }
+  .modal .form .auth-form_switch-down {
+    padding: 5px 20px;
+    font-size: 13px;
+  }
+  .modal .form .auth-form_form-login .eye {
+    margin-right: 104px;
+  }
+  .modal .form .auth-form_form-control .auth-form_group-right1 {
+    padding: 8px 0 8px 14px;
+    margin: 0 0 20px 52px;
+  }
+  .modal .form .auth-form_form-control .auth-form_group-right1 .button_fb i {
+    padding-left: 0px;
+    padding-right: 15px;
+    font-size: 15px;
+  }
+  .modal .form .auth-form_form-control .auth-form_group-right1 .button_fb:hover .button_fb-name,
+  .modal .form .auth-form_form-control .auth-form_group-right1 .button_fb:hover i {
+    font-size: 16px;
+  }
+  .modal .form .auth-form_form-control .auth-form_group-right2 {
+    padding: 8px 0 8px 14px;
+    margin: 0 0 20px 52px;
+  }
+  .modal .form .auth-form_form-control .auth-form_group-right2 .button_gg i {
+    padding-left: 0px;
+    padding-right: 15px;
+    font-size: 15px;
+  }
+  .modal .form .auth-form_form-control .auth-form_group-right2 .button_gg:hover .button_gg-name,
+  .modal .form .auth-form_form-control .auth-form_group-right2 .button_gg:hover i {
+    font-size: 16px;
+  }
+  .modal .form .auth-form_form-control .auth-form_group-right3 {
+    padding: 8px 0 8px 14px;
+    margin: 0 0 20px 52px;
+  }
+  .modal .form .auth-form_form-control .auth-form_group-right3 .button_ap i {
+    padding-left: 0px;
+    padding-right: 15px;
+    font-size: 15px;
+  }
+  .modal .form .auth-form_form-control .auth-form_group-right3 .button_ap:hover .button_ap-name,
+  .modal .form .auth-form_form-control .auth-form_group-right3 .button_ap:hover i {
+    font-size: 16px;
+  }
+  .modal .form .eye i {
+    margin-left: 0px;
+  }
+}
+
+/* mobile */
+@media (max-width: 720px) {
+  .modal .form {
+    width: 300px;
+    height: 450px;
+    margin: 152px 56px;
+  }
+  .modal .form .tab-header .dn {
+    width: 50%;
+    font-size: 21px;
+  }
+  .modal .form .tab-header .dk {
+    width: 50%;
+    font-size: 21px;
+  }
+  .modal .form .tab-content .auth-form .authen-form_header-down {
+    display: block;
+  }
+  .modal .form .tab-content .auth-form .authen-form_header-down .auth-form_heading-down {
+    width: 100%;
+    text-align: center;
+    padding: 5px 20px 25px 20px;
+    font-size: 16px;
+  }
+  .modal .form .tab-content .auth-form .authen-form_header-down .auth-form_switch-down {
+    width: 100%;
+    text-align: center;
+    padding: 0px 0px;
+    margin-top: -10px;
+    font-size: 0px;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form {
+    display: block;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-login {
+    text-align: center;
+    width: 100%;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-login .eye i {
+    margin-left: 30px;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right1 {
+    padding: 8px 0 8px 0px;
+    margin: 0;
+    background-color: #4f6cfa;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right1 .button_fb i {
+    padding-left: 0px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: var(--linear-gradient);
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right1 .button_fb .button_fb-name {
+    color: var(--linear-gradient);
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right1 .button_fb:hover .button_fb-name, .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right1 i {
+    font-size: 16px;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right2 {
+    padding: 8px 0 8px 0px;
+    margin: 0;
+    background-image: linear-gradient(to right,var(--linear-gradient),var(--linear-gradient1));
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right2 .button_gg i {
+    padding-left: 0px;
+    padding-right: 10px;
+    font-size: 15px;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right2 .button_gg:hover .button_gg-name, .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right2 i {
+    font-size: 16px;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right3 {
+    padding: 8px 0 8px 0px;
+    margin: 0;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right3 .button_ap i {
+    padding-left: 0px;
+    padding-right: 10px;
+    font-size: 15px;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right3 .button_ap:hover .button_ap-name, .modal .form .tab-content .auth-form .auth-form_form .auth-form_form-control .auth-form_group-right3 i {
+    font-size: 16px;
+  }
+  .modal .form .tab-content .auth-form .auth-form_form .button_ap-name {
+    color: var(--black-color);
+  }
+}
+/*# sourceMappingURL=style.css.map */
