@@ -1,0 +1,36 @@
+<div class="header">
+  <div class="box-hd">
+    <a href="">
+      <h1>Việc Làm Sinh Viên</h1>
+    </a>
+  </div>
+</div>
+
+<div class="menu">
+  <div class="box-menu">
+    <a routerLink="">Trang chủ</a>
+  </div>
+  <div class="search">
+    <input type="text" placeholder="Tên công việc cần tìm" >
+    <i class="fas fa-search"></i>
+  </div>
+  <div class="dropdown show" *ngIf="ILoggedIn">
+    <div  *ngFor="let i of user |async">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+       id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" *ngIf="i.email == getEmail()">
+      {{i.hovaten}}
+    </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" routerLink="">Danh sách việc</a>
+        <a class="dropdown-item" routerLink="">Thông tin tài khoản</a>
+        <a class="dropdown-item" (click)="logout()">Logout</a>
+      </div>
+    </div>
+  </div>
+  <div class="dropdown show" *ngIf="!ILoggedIn">
+    <a class="btn btn-secondary" routerLink="/login">Đăng nhập</a>
+    <a class="btn btn-secondary" routerLink="/register">Đăng Kí</a>
+  </div>
+
+
+</div>

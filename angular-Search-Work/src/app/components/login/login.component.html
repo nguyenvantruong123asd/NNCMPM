@@ -1,0 +1,14 @@
+<div>
+  <div class="box">
+    <h3>Sign In</h3>
+    <input id="1" type="text" placeholder="user name or email"  #emailSignin >
+    <input id="2" type="password" placeholder="password" #passwordSignin>
+    <button (click)="onSinin(emailSignin.value,passwordSignin.value)">Đăng nhập</button>
+    <h4>Or login with</h4>
+    <ul>
+      <li><a  (click)="facebookLogin()"><img src="assets/img/facelogo.jpg" alt=""></a></li>
+      <li><a (click)="gmailLogin()"><img src="assets/img/googlelogo.jpg" alt=""></a></li>
+    </ul>
+    <a class="signup" routerLink="/register">Sign up</a>
+  </div>
+</div>

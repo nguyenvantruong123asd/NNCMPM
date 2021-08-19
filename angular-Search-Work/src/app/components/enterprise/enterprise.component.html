@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="col-md-12" style="margin: auto">
+    <div class="col-md-8"  style="display: flex;margin: auto;margin-top: 30px; justify-content: space-between;align-items: center">
+      <h4>Danh sách công việc đã đăng</h4>
+      <button class="btn btn-primary" routerLink="/upwork">Thêm</button>
+    </div>
+    <div class="list-work" *ngFor="let item of works|async">
+      <div class="work-content" *ngIf="item.status == 'accept'">
+        <strong>Tên công việc: {{item.tencv}}</strong>
+        <p>Nơi làm việc: {{item.diachi}}</p>
+        <p>Lương: {{item.luong}}</p>
+        <p>Thời gian: {{item.ngaylv}}</p>
+        <p>Trạng thái: {{item.status}}</p>
+      </div>
+    </div>
+  </div>
+</div>

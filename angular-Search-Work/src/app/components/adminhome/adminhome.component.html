@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="col-md-12" style="height: 450px">
+    <div class="list-work" *ngFor="let i of works">
+      <div class="work-content">
+        <strong>Tên công việc: {{i.tencv}}</strong>
+        <p>Nơi làm việc: {{i.diachi}}</p>
+        <p>Lương: {{i.luong}}</p>
+        <p>Thời gian: {{i.ngaylv}}</p>
+        <p>Trạng thái: {{i.status}}</p>
+        <div>
+          <button (click)="update(i.key)" class="btn btn-primary" *ngIf="i.status == 'waiting'">Duyệt</button>
+          <button (click)="delete(i.key)" class="btn btn-danger">Xóa</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,17 @@
+.list-work{
+
+}
+.list-work .work-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 80px;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid rgba(179, 177, 177,0.5);
+  border-radius: 5px;
+}
+.work-content p {
+  margin: 0;
+}

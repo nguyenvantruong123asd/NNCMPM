@@ -1,0 +1,82 @@
+
+.box{
+  height: 600px;
+  width: 350px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid rgba(194, 194, 194, 0.5);
+}
+.box label{
+
+}
+.box h4{
+  margin-top: 50px;
+  color: rgb(211, 211, 211);
+}
+.box >a{
+  margin-top: 50px;
+  display: block;
+  text-decoration: none;
+}
+
+.box h3{
+  display: block;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.box input{
+  display: block;
+  margin: auto;
+  width: 220px;
+  height: 40px;
+  margin-top: 20px;
+  outline: none;
+  border: 0;
+  padding-left: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+.box button{
+  display: block;
+  margin: auto;
+  height: 35px;
+  width: 100px;
+  background-color: blueviolet;
+  border: 0;
+  border-radius: 15px;
+  outline: 0;
+  margin-top: 20px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.box button:hover{
+  color: aqua;
+  background-color: rgb(118, 36, 196);
+}
+.box ul{
+  list-style: none;
+  padding-left: 0;
+
+}
+.box ul li{
+  display: inline;
+  padding: 5px;
+}
+img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+}

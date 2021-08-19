@@ -1,0 +1,45 @@
+
+<div class="container-fluid col-md-6">
+  <div class="register-form">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" #emails>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Password</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="Password" #password>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="username">Họ và tên</label>
+          <input type="text" class="form-control" id="username" placeholder="Họ và tên" #hovaten>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="gioitinh">Giới tính</label>
+          <input type="text" class="form-control" id="gioitinh" placeholder="Giới tính" #gioitinh>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="birth">Ngày sinh</label>
+          <input type="text" class="form-control" id="birth" placeholder="Ngày sinh" #ngaysinh>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="birth">Loại tài khoản</label>
+          <input type="text" class="form-control" id="loaitk" placeholder="Loại tài khoản" #type>
+        </div>
+      </div>
+      <div class="col-md-4 form-btn" >
+        <button  class="btn btn-primary" (click)="registerAccount(emails.value,password.value,hovaten.value,ngaysinh.value,gioitinh.value,type.value)">Sign up</button>
+        <button  class="btn btn-primary" routerLink="/login">Sign in</button>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+

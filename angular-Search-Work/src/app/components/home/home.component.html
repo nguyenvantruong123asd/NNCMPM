@@ -1,0 +1,30 @@
+
+<div class="container-fluid">
+  <div class="col-md-12" style="height: 400px">
+    <div class="fillter-tool">
+      <select>
+        <option value="">HCM</option>
+      </select>
+      <select name="" >
+        <option value="">200k</option>
+      </select>
+      <select name="" >
+        <option value="">Phục vụ</option>
+      </select>
+      <button class="btn btn-primary">Lọc</button>
+    </div>
+
+    <div class="list-work" *ngFor="let item of works">
+      <div class="work-content" *ngIf="item.status == 'accept'">
+        <strong>Tên công việc: {{item.tencv}}</strong>
+        <p>Nơi làm việc: {{item.diachi}}</p>
+        <p>Lương: {{item.luong}}</p>
+        <p>Thời gian: {{item.ngaylv}}</p>
+        <div>
+          <button class="btn btn-primary">Apply</button>
+          <button class="btn btn-dark">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+.header{
+  height: 70px;
+  border-bottom: 1px solid gray;
+}
+.box-hd{
+  height: 50px;
+  width: 90%;
+  margin: auto;
+}
+.header .box-hd img{
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+  border: 2px solid gray;
+}
+.header .box-hd h1{
+  display: block;
+  float: left;
+  width: 350px;
+  margin: 0;
+  color: #00aec9;
+  margin-top: 15px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(179, 177, 177,0.5);
+  padding: 10px 0;
+}
+.menu a{
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.menu .box-menu{
+  margin: 15px 0;
+  margin-left: 5%;
+}
+.menu .box-menu a{
+  font-size: 18px;
+}
+.menu .search{
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid rgba(179, 177, 177,0.7);
+}
+.menu .search input{
+  width: 400px;
+  height: 30px;
+  outline: 0;
+  border: 0;
+}
+.search i{
+  padding: 0 10px;
+}
+.search i:hover{
+  color: #00aec9;
+}
+
+.menu .dropdown{
+  margin-right: 7%;
+}
+.menu .dropdown .btn{
+  background-color: white;
+  color:black;
+  border: 0;
+  outline: 0;
+}
+.menu .dropdown .btn:focus{
+  box-shadow: unset;
+  color: #00aec9;
+}
+.menu .dropdown .btn:hover{
+  color: #00aec9;
+}
