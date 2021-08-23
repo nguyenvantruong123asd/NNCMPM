@@ -41,10 +41,11 @@
   margin-top: 20px;
   outline: none;
   border: 0;
-  padding-left: 10px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 8px 12px 12px 15px;
+  border-radius: 28px;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #0003;
   font-weight: bold;
+  font-size: 14px;
 }
 .box button{
   display: block;
@@ -53,12 +54,13 @@
   width: 100px;
   background-color: blueviolet;
   border: 0;
-  border-radius: 15px;
+  border-radius: 20px;
   outline: 0;
-  margin-top: 20px;
   font-weight: bold;
-  color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  box-shadow: 0 4px 8px #0003, 0 6px 20px #0003;
+  font-size: 14px;
+  margin-top: 20px;
 
 }
 
