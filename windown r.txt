@@ -1,0 +1,9 @@
+gpedit.msc : vao trang xoa vinh vien updae windown
+  	1 : admin
+	2 : windown
+	3 : windown update
+	4 : automatic update
+services.msc : vao trang quan ly sever
+	1
+https://www.iobit.com/en/driver-booster.php
+msinfor32 : kiểm tra chuẩn
